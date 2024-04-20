@@ -1,0 +1,9 @@
+version: '3'
+services:
+
+  go:
+    build: ./go
+    container_name: '${COMPOSE_PROJECT_NAME}-go'
+    tty: true
+    volumes:
+      - "../backend/go:/opt/src"
